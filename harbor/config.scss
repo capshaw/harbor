@@ -1,0 +1,9 @@
+// The gutter size is the size between columns when using the default gutter mode.
+$u: 20px;
+$gutter-size: $u;
+
+// Only used for the documentation.
+$theme-color: #4294DB;
+
+// When using the collapsing grid, the width at which to collapse.
+$break-large: 600px;

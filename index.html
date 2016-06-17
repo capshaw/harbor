@@ -1,0 +1,103 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harbor | Yet another grid framework!</title>
+  <link rel="stylesheet" href="harbor/example.css">
+  <link rel="stylesheet" href="harbor/harbor.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Harbor</h1>
+  <h2>Yet another grid framework!</h2>
+  <div class="notification">
+    By default the grid makes no assumptions about when to break formation.
+    We assume you've got the responsive stuff figured out.
+    Go ahead, resize the page.
+    The grid will hold it's structure, no matter how small you make the page.
+  </div>
+
+  <div class='grid grid--example'>
+    <div class='cell full-size cell--example'></div><!--
+    --><div class='cell half-size cell--example'></div><!--
+    --><div class='cell half-size cell--example cell--example--focus'></div><!--
+    --><div class='cell third-size cell--example'></div><!--
+    --><div class='cell third-size cell--example cell--example--focus'></div><!--
+    --><div class='cell third-size cell--example'></div><!--
+    --><div class='cell quarter-size cell--example'></div><!--
+    --><div class='cell quarter-size cell--example cell--example--focus'></div><!--
+    --><div class='cell quarter-size cell--example'></div><!--
+    --><div class='cell quarter-size cell--example'></div><!--
+    --><div class='cell eighth-size cell--example'></div><!--
+    --><div class='cell eighth-size cell--example cell--example--focus'></div><!--
+    --><div class='cell eighth-size cell--example'></div><!--
+    --><div class='cell eighth-size cell--example'></div><!--
+    --><div class='cell eighth-size cell--example'></div><!--
+    --><div class='cell eighth-size cell--example'></div><!--
+    --><div class='cell eighth-size cell--example'></div><!--
+    --><div class='cell eighth-size cell--example'></div>
+  </div>
+
+  <div class="notification">
+    But sometimes you do want the grid to collapse by default.
+  </div>
+
+  <div class='grid grid--collapse grid--example'>
+    <div class='cell cell--collapse full-size cell--example'></div><!--
+    --><div class='cell cell--collapse half-size cell--example'></div><!--
+    --><div class='cell cell--collapse half-size cell--example cell--example--focus'></div><!--
+    --><div class='cell cell--collapse third-size cell--example'></div><!--
+    --><div class='cell cell--collapse third-size cell--example cell--example--focus'></div><!--
+    --><div class='cell cell--collapse third-size cell--example'></div>
+  </div>
+
+  <div class="notification">
+    Grids can be nested, allowing you to create complex grids.
+  </div>
+
+  <div class='grid grid--example'>
+    <div class='cell full-size cell--example'></div><!--
+    --><div class='cell half-size cell--example'></div><!--
+    --><div class='cell half-size'>
+    <div class='grid grid--example'>
+      <div class='cell third-size cell--example cell--example--focus'></div><!--
+      --><div class='cell third-size cell--example cell--example--focus'></div><!--
+      --><div class='cell third-size cell--example cell--example--focus'></div>
+    </div>
+    </div>
+  </div>
+
+  <div class="notification">
+    Collapsing grids can be nested inside of non-collapsing grids.
+  </div>
+
+  <div class='grid grid--example'>
+    <div class='cell full-size cell--example'></div><!--
+    --><div class='cell half-size cell--example'></div><!--
+    --><div class='cell half-size'>
+    <div class='grid grid--collapse grid--example'>
+      <div class='cell cell--collapse third-size cell--example cell--example--focus'></div><!--
+      --><div class='cell cell--collapse third-size cell--example cell--example--focus'></div><!--
+      --><div class='cell cell--collapse third-size cell--example cell--example--focus'></div>
+    </div>
+    </div>
+  </div>
+
+  <div class="notification">
+    And non-collapsing grids can be nested inide of collapsing grids!
+  </div>
+
+  <div class='grid grid--collapse grid--example'>
+    <div class='cell cell--collapse full-size cell--example'></div><!--
+    --><div class='cell cell--collapse half-size cell--example'></div><!--
+    --><div class='cell cell--collapse half-size'>
+    <div class='grid grid--example'>
+      <div class='cell third-size cell--example cell--example--focus'></div><!--
+      --><div class='cell third-size cell--example cell--example--focus'></div><!--
+      --><div class='cell third-size cell--example cell--example--focus'></div>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
